@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+GeoACSets = "facb24f6-7806-49a6-92f1-7aab378a7522"
+
+[compat]
+Documenter = "1"

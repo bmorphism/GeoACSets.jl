@@ -1,0 +1,26 @@
+name = "GeoACSets"
+uuid = "facb24f6-7806-49a6-92f1-7aab378a7522"
+authors = ["bmorphism <barton@topos.institute>"]
+version = "0.1.0"
+
+[deps]
+ACSets = "227ef7b5-1206-438b-ac65-934d6da304b8"
+GeoInterface = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
+LibGEOS = "a90b1aa1-3769-5649-ba7e-abc5a9d163eb"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[weakdeps]
+LibGEOS = "a90b1aa1-3769-5649-ba7e-abc5a9d163eb"
+
+[compat]
+julia = "1.9"
+ACSets = "0.2"
+GeoInterface = "1"
+LibGEOS = "0.8"
+Reexport = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
