@@ -89,6 +89,17 @@ const SchSpatialGraph = BasicSchema(
     ]
 )
 
+"""
+    SpatialGraph{Geom, Weight}
+
+ACSet type for the SpatialGraph schema.
+
+Type parameters:
+- `Geom`: geometry type for vertex locations and edge geometries
+- `Weight`: numeric type for edge weights (typically Float64)
+
+Indexed morphisms: src, tgt
+"""
 @acset_type SpatialGraph(SchSpatialGraph, index=[:src, :tgt])
 
 
@@ -119,4 +130,15 @@ const SchParcelAdjacency = BasicSchema(
     ]
 )
 
+"""
+    ParcelAdjacency{Geom, Length}
+
+ACSet type for the ParcelAdjacency schema.
+
+Type parameters:
+- `Geom`: geometry type for parcel boundaries
+- `Length`: numeric type for shared boundary length
+
+Indexed morphisms: left, right
+"""
 @acset_type ParcelAdjacency(SchParcelAdjacency, index=[:left, :right])
